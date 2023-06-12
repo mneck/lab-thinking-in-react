@@ -1,11 +1,22 @@
 import ProductRow from './ProductRow';
 
-function ProductTable() {
+function ProductTable({ data }) {
   return (
-    <>
-      <ProductRow />
-      <p>This is the product table!</p>
-    </>
+    <div className="productTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((obj) => (
+            <ProductRow key={obj.id} data={obj} />
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
 

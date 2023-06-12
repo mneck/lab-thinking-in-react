@@ -1,8 +1,9 @@
-function ProductRow() {
+function ProductRow({ data }) {
   return (
-    <>
-      <p>This is a product row!</p>
-    </>
+    <tr>
+      <td>{data.name}</td>
+      <td>{data.price}</td>
+    </tr>
   );
 }
 

@@ -28,11 +28,21 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchBar {
+  border: solid;
+  padding: 2em;
+  margin: 2em;
+}
+
+.productTable {
+  border: solid;
+  padding: 1em;
+}
+
+th {
+  background-color: rgb(236, 236, 236);
+  width: 80%;
+  padding: 2em;
+  border: 0em;
+  margin: auto;
 }
